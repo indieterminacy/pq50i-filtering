@@ -20,3 +20,14 @@ company.hidecolumn(
 # company.hidecolumn('Country')
 # company.hidecolumn('Stakeholder Type')
 # company.hidecolumn('Opens')
+#
+#
+#
+    def hidecolumn(
+        self,
+        q50columnstohide
+    ):
+        for item in q50columnstohide:
+            self.q50kexcludedcolumns.append(
+                item
+            )
